@@ -16,6 +16,8 @@ const ContactForm = ({ onSubmit }) => {
   const handleSubmit = e => {
     e.preventDefault();
     onSubmit({ name, number });
+    setname('');
+    setnumber('');
   };
   return (
     <form className={css.container} onSubmit={handleSubmit}>
