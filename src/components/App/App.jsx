@@ -22,7 +22,6 @@ const App = () => {
     }
   }, []);
   useEffect(() => {
-    const contacts = localStorage.getItem('contacts');
     if (contacts) {
       localStorage.setItem('contacts', JSON.stringify(contacts));
     }
